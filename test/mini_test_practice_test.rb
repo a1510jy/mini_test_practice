@@ -14,6 +14,7 @@ class MiniTestPracticeTest < Minitest::Test
     assert !@myclass.odd?(10), "odd?(10) = false"
     assert @myclass.odd?(11), "odd?(11) = true"
     assert !@myclass.odd?(12), "odd?(12) = false"
+    assert @myclass.odd?(111), "odd?(1i1) = true"
   end
 
   def test_check_number
